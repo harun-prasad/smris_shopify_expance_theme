@@ -2564,7 +2564,7 @@ input[type=image]{
 
 select{
   background-position:100%;
-  background-image:url(//smris.com/cdn/shop/t/20/assets/ico-select.svg);
+  background-image:url(//smris.com/cdn/shop/t/17/assets/ico-select.svg);
   background-repeat:no-repeat;
   background-position:right 10px center;
   background-size:11px;
@@ -8024,7 +8024,7 @@ select .variant-input{
   }
 
 .scheme-swirl{
-  background-image:url(//smris.com/cdn/shop/t/20/assets/swirl.svg);
+  background-image:url(//smris.com/cdn/shop/t/17/assets/swirl.svg);
   opacity:0.12;
 }
 
@@ -11358,7 +11358,7 @@ html[dir=rtl] .product-single__meta .rte{
   vertical-align:middle;
   margin-right:10px;
   opacity:1;
-  background-image:url(//smris.com/cdn/shop/t/20/assets//cdn.shopify.com/s/assets/gift-card/icon-print-164daa1ae32d10d1f9b83ac21b6f2c70.png?3746);
+  background-image:url(//smris.com/cdn/shop/t/17/assets//cdn.shopify.com/s/assets/gift-card/icon-print-164daa1ae32d10d1f9b83ac21b6f2c70.png?4198);
   background-repeat:no-repeat;
   background-position:0 0;
 }
