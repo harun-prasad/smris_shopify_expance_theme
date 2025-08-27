@@ -438,7 +438,7 @@ p.custom-heading{
   color: rgba(0, 0, 0, 0.65);
 }
 
-
+/*2025-08-27 Harun added code to show preorder label for stock marked with continue to sell when out of stock */
 .grid-product__tag.grid-product__tag--preorder {
   background-color: #cd23bb;
   color: #fff;
