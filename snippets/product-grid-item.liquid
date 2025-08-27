@@ -97,6 +97,10 @@
             {%- endfor -%}
           {%- endif -%}
 
+          {% comment %}
+          # 2025-08-27 Harun added code to show preorder label for stock marked with continue to sell when out of stock
+          {% endcomment %}
+
           {%- assign first_variant = product.variants.first -%}
 
           {%- if first_variant.inventory_quantity <= 0 and first_variant.inventory_policy == 'continue' -%}
