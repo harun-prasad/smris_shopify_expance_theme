@@ -97,17 +97,23 @@
             {%- endfor -%}
           {%- endif -%}
 
-          {%- unless product.available -%}
+          {%- assign first_variant = product.variants.first -%}
+
+          {%- if first_variant.inventory_quantity <= 0 and first_variant.inventory_policy == 'continue' -%}
+            <div class="grid-product__tag grid-product__tag--preorder">
+              Preorder
+            </div>
+          {%- elsif product.available == false -%}
             <div class="grid-product__tag grid-product__tag--sold-out">
               {{ 'products.product.sold_out' | t }}
             </div>
-          {%- endunless -%}
-          {%- if on_sale and product.available -%}
+          {%- elsif on_sale and product.available -%}
             <div class="grid-product__tag grid-product__tag--sale">
               {{ 'products.general.sale' | t }}
             </div>
           {%- endif -%}
         </div>
+
 
         {%- if fixed_aspect_ratio -%}
           <div
